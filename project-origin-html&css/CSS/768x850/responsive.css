@@ -1,0 +1,160 @@
+@media screen and (max-width: 768px) {
+    /* pagina inicial */
+    header .main h1{
+        font-size: 9em;
+    }
+    header .main h2{
+        width: 90%;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-family:  'Roboto', sans-serif;
+        text-align: center;
+        letter-spacing: .2rem;
+        color: #fff;
+        margin-top: 2px;
+    }
+    header .main button{
+        justify-self: center;
+        width: 180px;
+        height: 35px;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 15px;
+        font-family: 'Roboto';
+        margin-top: 50px;
+        color: #fff;
+        cursor: pointer;
+    }
+    header div .button{
+        padding-bottom: 150px;
+        text-align: center;
+        width: 85%;
+    }
+    header .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    
+        align-self: start;
+        justify-self: start;
+        width: 20%;
+        height: 100%;
+    }
+    header{
+        display: grid;
+        height: 100vh;
+        background: #A9081C;
+        grid-template-rows: 25% 70%;
+    }
+    header .menu a{
+        margin-left: 0px;
+    }
+    header .menu h2{
+        align-self: start;
+    }
+    .main{
+        margin-top: 60px;
+    }
+    /* escondendo o menu */
+    header nav {
+        display: none;
+    }
+    /* mostrando o menu hamburguer */
+    header .container {
+        display: flex;
+        margin-left: auto;
+    }
+    /* equipe */
+    .team{
+        padding-top: 50px;
+        background-color: none;
+    }
+    .team .card img,
+    .team .card-2 img{
+        width: 180px;
+        height: 180px;  
+    }
+    /* sobre nós */
+    
+    .layout{
+        margin-top: 50px;
+        width: 100%;
+        display: inline-flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .texto {
+        margin-right: 2vw;
+        width: 80%;
+        height: 100%;
+        font-family: 'Roboto';  
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .image-pessoas img {
+        width: 70vw;
+    }
+    /* serviços */
+    .service .card{ 
+        display: inline-flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 40vh;
+        background-color:#fff;
+        box-shadow: -1px 9px 9px rgb(0, 0, 0, 0.25);
+        margin: 20px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        border:solid 0.5px rgb(80, 80, 80, 0.1);
+    }
+    
+    .service .card .subtitle{
+        width: 100%;
+        height: 20%;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .service .card .info{
+        padding-top: 20px;
+        width: 60%;
+        font-size: 18px;
+        align-self: center;
+        font-weight: 500; 
+    }
+    /* contato */
+    .contact {       
+        width: 70vw;
+        border-top:10px solid #fff;
+    }
+    form .mensage input{
+        padding-bottom: 150px;
+    }
+    form button{
+        width: 20vw;
+        height: 8vh;
+        font-size: 20px;
+    }
+    /* rodape */
+    footer .rodape{
+        background-color: #A9081C;
+        color: white;
+        font-family: 'Roboto';
+        display: inline-flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 40vh;
+        align-items: center;    
+    }
+    footer .rodape div{
+        width: 20vw;
+        height: 50%;
+    }
+}

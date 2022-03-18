@@ -1,0 +1,168 @@
+@media screen and (max-width: 640px) and (max-height: 360px) {
+    /* pagina inicial */
+    header .main h1 {
+        font-size: 6em;
+        margin-top: 20vh;
+    }
+
+    header .main h2 {
+        font-size: 1em;
+        margin-top: 2px;
+    }
+
+    header .main button {
+        width: 160px;
+        height: 30px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    header div .button {
+        width: 85%;
+    }
+
+    header .logo {
+        margin-left: 0px;
+        width: 20%;
+    }
+
+    header .menu a {
+        margin-left: 0px;
+    }
+
+    header .menu h2 {
+        align-self: start;
+    }
+
+    .main {
+        margin-top: 60px;
+    }
+
+    /* escondendo o menu */
+    header nav {
+        display: none;
+    }
+
+    /* mostrando o menu hamburguer */
+    header .container {
+        margin-left: auto;
+        display: flex;
+    }
+
+    /* sobre nós */
+    .titulo2 h2 {
+        font-size: 30px;
+    }
+
+    .titulo2 p {
+        margin-top: 0px;
+        font-size: 14px;
+        margin-bottom: 0vh;
+    }
+
+    .layout {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .texto {
+        width: 80%;
+        height: 100%;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .image-pessoas img {
+        width: 60vw;
+    }
+
+    /* serviços */
+    .service .name-section {
+        font-size: 30px;
+    }
+
+    .service .description {
+        font-size: 14px;
+    }
+
+    .service .card {
+        width: 40vw;
+        height: 60vh;
+    }
+
+    .service .card .subtitle {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .service .card .info {
+        width: 70%;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    /* equipe */ 
+    .team{
+        padding-top: 10px;
+    }
+    .equipe h2 {
+        height: 100%;
+        font-size: 30px;
+    }
+
+    .equipe p {
+        margin-top: 0px;
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .team .card .persona img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .team .card .name {
+        padding-top: 5px;
+        font-size: 16px;
+    }
+
+    .team .card .charge {
+        font-size: 10px;
+    }
+
+    /* contato */
+    section .name-section {
+        font-size: 30px;
+    }
+
+    section .description {
+        margin-top: 0px;
+        font-size: 14px;
+    }
+
+    .contact {
+        width: 70vw;
+        border-top: 10px solid #fff;
+    }
+
+    form label {
+        font-size: 13px;
+    }
+
+    form button {
+        width: 27vw;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    /* rodape */
+    footer .rodape {
+        height: 80vh;
+    }
+
+    footer .rodape div {
+        width: 20vw;
+    }
+}

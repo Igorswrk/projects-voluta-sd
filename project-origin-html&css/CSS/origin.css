@@ -1,0 +1,528 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url("../fonts/segoeuibold.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Black'), url("../fonts/segoeuiblack.woff") format('woff');
+}
+
+/*Inicio*/
+header{
+    display: grid;
+    height: 100vh;
+    background: #A9081C;
+    grid-template-rows: 25% 70%;
+}
+
+
+header nav{
+    justify-self: right;
+    align-self: center;
+}
+
+header .dropdown {
+    display: none;
+}
+
+header .menu{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    max-height: 6vh;
+}
+
+header .menu h2{
+    font-family: 'Segoe UI Bold', Fallback, sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: white;
+    align-self: center;
+    justify-content: start;
+}
+
+header .menu a{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+header .main{
+    display: grid;
+}
+
+header .main h1{
+    width: 90%;
+    text-transform: uppercase;
+    font-family: 'Segoe UI Black', Fallback, sans-serif;
+    text-align: center;
+    font-size: 15em;
+    color: #b50c21;
+    text-shadow: 0px 4px 7px #0003;
+}
+
+header .main h2{
+    width: 90%;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family:  'Roboto', sans-serif;
+    text-align: center;
+    letter-spacing: .2rem;
+    color: #fff;
+}
+
+header div .button{
+    padding-bottom: 150px;
+    text-align: center;
+    width: 90%;
+}
+
+header .main .button{
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    outline: inherit;  
+}
+
+header .main button{
+    justify-self: center;
+    width: 210px;
+    height: 45px;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 20px;
+    font-family: 'Roboto';
+    margin-top: 50px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: center;
+}
+
+.main{
+    flex:1;
+}
+
+header .logo img {
+    height: 20px; 
+    width: 20px;
+}
+
+header .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    align-self: start;
+    justify-self: start;
+    width: 10%;
+    height: 100%;
+}
+
+header .logo a {
+    padding: 20px 0;
+}
+
+/*-----------------------------------Menu Dropdown--------------------------------------*/
+.container {
+    height: 100%;
+    display: grid;
+    justify-content: end;
+    display: none;
+    position: relative;
+}
+
+#checkbox-menu {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+label[for="checkbox-menu"] {
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    right: 0;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+
+label[for="checkbox-menu"] span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: #ffffff;
+    transition: 0.25s ease-in-out;
+}
+
+label[for="checkbox-menu"] span:nth-child(1) {
+    top: 0;
+}
+
+label[for="checkbox-menu"] span:nth-child(2) {
+    top: 8px;
+}
+
+label[for="checkbox-menu"] span:nth-child(3) {
+    top: 16px;
+}
+
+#checkbox-menu:checked+label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked+label span:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbox-menu:checked+label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.dropdown-child {
+    display: none;
+    background-color: black;
+    margin-top: 44px;
+    align-items: center;
+    border-radius: 10px;
+    width: 20vw;
+}
+
+.dropdown-child a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+input[type=checkbox]:checked~#myDropdown {
+    display: block;
+}
+
+.dropdown-child:active~#myDropdown {
+    display: none;
+}
+
+/*------------------------------------------Sobre nós---------------------------------------------------------------*/
+.titulo2 h2{
+    margin-top: 5vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    text-align: center;
+    color: #111A21;
+    text-transform: uppercase;
+}
+
+.titulo2 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #111A21;
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+}
+
+.layout{
+    width: 100%;
+    display: inline-flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto {
+    margin-right: 2vw;
+    width: 35%;
+    height: 100%;
+    font-family: 'Roboto';  
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+
+.image-pessoas img {
+    width: 35vw;
+}
+
+/*-----------------------------------Serviços--------------------------------------*/
+
+.service{
+    display: inline-flex; 
+    flex-direction: column;
+    align-items: space-between;
+    width: 100%;
+    text-align: center;
+}
+
+.service div{
+    justify-content: center;
+}
+
+.service .name-section{
+    margin-top: 8vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    text-align: center;
+    color: #111A21;
+    text-transform: uppercase;
+}
+
+.service .description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 0;
+    color: #111A21;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+}
+
+.service .card{ 
+    display: inline-flex;
+    flex-direction: column;
+    width: 450px;
+    height: 45vh;
+    background-color:#fff;
+    box-shadow: -1px 9px 9px rgb(0, 0, 0, 0.25);
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border:solid 0.5px rgb(80, 80, 80, 0.1);
+}
+
+.service .card .subtitle{
+    width: 100%;
+    height: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.service .card .info{
+    padding-top: 20px;
+    width: 60%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    align-self: center;
+    font-weight: 500; 
+}
+
+/*------------------------------------------Equipe-----------------------------------------------------*/
+
+.team{
+    padding-top: 40px;
+}
+
+.equipe h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    text-align: center;
+    color: #111A21;
+    text-transform: uppercase;
+}
+
+.equipe p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #111A21;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    margin-bottom: 5vh;
+}
+.team .card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 60vw;
+	margin: 0 auto;
+}
+
+.team .card .persona{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.team .card img {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;  
+}
+
+.team .card .name {
+    padding-top: 10px;
+    text-align: center;    
+    font-family: 'Roboto', black;
+    font-style: bold;
+    width: 100%;
+    font-size: 18px;
+}
+
+.team .card .charge {
+    text-align: center; 
+    font-weight: normal;
+    font-family: 'Roboto';
+    font-size: 16px;
+    width: 100%;
+    height: 10vh;
+}
+
+/*-------------------------------------------Contato-------------------------------------------------*/
+.contact {       
+    width: 40vw;
+    margin: auto; 
+}
+
+section .name-section {
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    text-align: center;
+    color: #111A21;
+    text-transform: uppercase;
+}
+
+section .description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #111A21;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+}
+
+form {
+    margin: auto;
+    margin-bottom: 15vh;
+}
+
+form input {
+    background-color:none;
+    width: 100%;
+    line-height: 20px;
+    border: 2px; 
+    background: #f2f2f2;
+    padding-bottom: 20px;
+    font-size:16px;
+    outline: none;
+    border-radius: 4px;
+}
+
+form .mensage input{
+    padding-bottom: 200px;
+}
+
+form label{
+    display: inline-block;
+    padding-top: 40px;
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 20px;
+    color:#111A21;
+}
+
+
+form button{
+    margin-top: 40px;
+    width: 22vw;
+    height: 10vh;
+    background-color: #111A21;
+    border-radius: 4px;
+    color:white;
+    font-weight: normal;
+    font-size: 25px ;
+    font-family: 'Roboto';
+    letter-spacing: 3px;
+    border:0;
+}
+
+/*--------------------------------------footer------------------------------------*/
+
+footer .rodape{
+    background-color: #A9081C;
+    color: white;
+    font-family: 'Roboto';
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 30vh;
+    align-items: center;    
+}
+
+footer .rodape div{
+    text-align: left;
+    width: 15vw;
+    height: 50%;
+}
+footer .rodape ul{
+    display: flex; 
+    flex-direction: column;
+}
+.rodape .name{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.rodape .copy{
+    margin-top: 10px;
+}
+.rodape li{
+    margin-top: 5px;
+}
+
+.rodape li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+}
+
+.rodape address{
+    font-style: normal;
+}
+
+footer ul{
+    list-style: none;
+    color: white;
+}
+
+
+
+
+
