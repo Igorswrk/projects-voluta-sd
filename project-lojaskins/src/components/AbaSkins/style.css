@@ -1,0 +1,56 @@
+#AbaSkins{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+
+#AbaSkins div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(circle, rgba(0,0,0) 0%, transparent);
+    width: 25vw;
+    height: 100%;
+}
+
+#AbaSkins div:hover{
+    background-color:#fafbfd2f;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    border-bottom: #004864 5px solid;
+}
+
+#AbaSkins div a{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#AbaSkins div img{
+    height: 4vw;
+}
+
+#AbaSkins div a:hover{
+    color: #fff;
+}
+
+@media (max-width:875px){
+
+    #AbaSkins{
+        height: 12vh;
+    }
+}
+
+@media (max-width:550px){
+
+    #skins #AbaSkins{
+        height: 7vh;
+    }
+}

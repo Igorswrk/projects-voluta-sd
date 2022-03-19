@@ -1,0 +1,90 @@
+.lbox{
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+    visibility: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lbox img{
+    height: 0px;
+    width: 0px;
+}
+
+.lbox:target{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgb(10, 10, 10, .7);
+    position: fixed;
+}
+
+.lbox #close{
+    color:#fff;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    font-size: 5rem;
+    right: 2%;
+    z-index: 20;
+}
+
+.lbox:target img{
+    width: 40vw;
+    height: 55vh;
+    background: #FAFBFD;
+}
+
+.lbox .box_img{
+    width: 75vw;
+    margin: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.lbox .box_img section{
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFBFD;
+    width: 40vw;
+    text-align: center;
+}
+
+.lbox .box_img section .nameItem{
+    font-size: 1.8rem;
+    color: hsl(173, 71%, 28%);
+}
+
+.lbox .box_img section .descriptionItem{
+    width: 30vw;
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.lbox .box_img section button{
+    background-color: #121212;
+    color: #FAFBFD;
+    margin-top: 3vh;
+    width: 10vw;
+    height: 6vh;
+    border: solid #FAFBFD 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: .2vw .2vh #121212a1;
+    letter-spacing: .2vw;
+}
+
+.lbox .box_img section .preco{
+    margin-top: 3vh;
+    font-weight: 600;
+}

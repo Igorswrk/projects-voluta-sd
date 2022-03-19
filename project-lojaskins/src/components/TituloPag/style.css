@@ -1,0 +1,35 @@
+#title{
+    width: 100%;
+    height: 25vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+
+#title h1{
+    font-family: 'beskerville';
+    font-size: 10rem;
+    width: 100%;
+    color: #FAFBFD;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (max-width:1315px){
+
+    #title{
+        height: 17vh;
+    }
+}
+
+@media (max-width:875px){
+
+    #title{
+        height: 12vh;
+    }
+
+    #title h1{
+        font-size: 8vw;
+    }
+}

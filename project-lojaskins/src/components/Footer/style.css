@@ -1,0 +1,71 @@
+#rodape{
+    width: 100vw;
+    height: 50vh;
+    background: linear-gradient(180deg, rgba(250,251,253,1) 5%, rgba(0,0,0,0.4374124649859944) 59%), url(../../assets/img/van.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#rodape ul{   
+    text-align: center;    
+    width: 15vw;
+    height: auto;
+    color: #121212;
+}
+
+#rodape nav{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#rodape nav p{
+    color: black;
+}
+
+#rodape a, #rodape a:visited{
+    color: #121212;
+}
+
+#rodape nav li{
+    list-style: none;
+}
+
+
+#rodape nav li:hover, #rodape nav a:hover{
+    color: black;
+}
+
+@media (max-width:1315px){
+
+    .rodape {
+        height: 30vh;
+    }
+}
+@media (max-width:455px){
+    
+    #rodape{
+        height: 60vh;
+        font-size: 1.4rem;
+    }  
+
+    #rodape nav{
+        text-align: center;
+        flex-direction: column;
+    }
+    #rodape ul{   
+        width: 40vw;
+    }
+    #rodape p{
+        margin-top: 3vh;
+    }
+}

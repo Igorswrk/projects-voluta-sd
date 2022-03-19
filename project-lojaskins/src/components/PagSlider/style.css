@@ -1,0 +1,128 @@
+#i1, #i2, #i3, #i4, #i5{ display: none;}
+
+.slide_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+}
+
+.slide_img .div_img{
+    height: 20vh;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FAFBFD;
+    border-radius: 10%;
+}
+
+.slide_img .div_img .img_page{
+    height: 80%;
+    background: #FAFBFD;
+}
+
+.slide_img .logo, .slide_img .titlePage{
+    font-family: 'beskerville';
+    line-height: 8rem;
+}
+
+.slide_img .logo{
+    width: 65%;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #FAFBFD;
+    text-shadow: .1vw .2vh #121212 ;
+}
+
+.slide_img .titlePage{
+    width: 65%;
+    font-size: 3rem;
+    color: #121212;
+}
+
+.slide_img .descriptionPage{
+    width: 65%;
+    font-size: 1.8rem;
+    color: #121212;
+}
+
+
+@media (max-width:1700px){
+    html {
+        font-size: 55%;
+    }
+    .slide_img .div_img{
+        width: 15vw;
+    }
+}
+
+@media (max-width:1510px){
+    .slide_img .div_img {
+        width: 15vw;
+    }
+}
+
+@media (max-width:1315px){
+    html{
+        font-size: 45%;
+    }
+ 
+    .slide_img .div_img {
+        width: 20vw;
+    }
+} 
+
+@media (max-width:900px){
+    .slide_img .div_img {
+        width: 25vw;
+    }
+}
+
+@media (max-width:875px){
+    .slide_img .div_img {
+        width: 30vw;
+        height: 18vh;
+    }
+    
+    .slide_img .img_page {
+        width: 20vw;
+        height: 18vh;
+    }
+}
+
+@media (max-width:550px){
+
+    .slide_img .div_img {
+        width: 20vw;
+        height: 10vh;
+    }
+    
+    .slide_img .img_page {
+        width: 18vw;
+        height: 10vh;
+    }
+}
+
+@media (max-width:455px){
+
+    .slide_img .logo {
+       width: 65%;
+       font-size: 4rem;
+   }
+}
+
+@media (max-width: 447px){
+    .slide_img{
+       height: 100%;
+    }
+   
+    .slide_img .titlePage{
+       width: 65%;
+       font-size: 2rem;
+    }
+}

@@ -1,0 +1,178 @@
+#cabecalho{
+    font-family: 'Baskervville';
+    background-image:url(../../assets/img/fundoheader.png);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;        
+    height: 100vh;
+    width: 100vw;    
+}
+
+#cabecalho nav{
+    
+    display: flex;
+    flex-direction: row; 
+
+    text-align: center;
+    text-transform: uppercase;
+    
+    width: 100vw;
+    height: 5vh;
+}
+
+#cabecalho .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 5vh;
+    background: #121212;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cabecalho .menu a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FAFBFD;    
+    font-size: 2.2rem;
+    font-weight: 700;
+   
+    height: 100%; 
+    width: 20vw;
+}
+    
+#cabecalho .menu a:hover{
+    background-color:#fafbfd2f;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    border-bottom: #004864 5px solid;
+}
+
+#cabecalho .menu a:active{
+    background-color: #fafbfd44;
+}
+
+#cabecalho .espaco{
+    height: 87vh;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    
+    color: #FAFBFD;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cabecalho .espaco h1{
+    font-size: 28rem;
+}
+
+#cabecalho .espaco p{
+    font-family: 'Montserrat';
+    font-size: 3rem;
+    line-height: 4vh;
+    font-weight: 500;
+    background: rgb(18,18,18);
+    background: radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(248,248,248,0) 100%);
+    width: 70vw;
+    text-align: center;
+}
+
+#cabecalho .arrow{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 8vh;
+}
+
+#cabecalho .arrow a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 8vh;
+    width: 10vw;
+    background: #121212d3;
+}
+
+#cabecalho .arrow a img{
+    width: 3vw;
+    height: 2vh;
+}
+
+@media (max-width:1180px){
+    #cabecalho .espaco h1 {
+        font-size: 24rem;
+    }
+
+    #cabecalho .arrow a{
+        height: 5vh;
+    }
+}
+
+@media (max-width:1055px){
+    #cabecalho{
+        height: 70vh;
+    }
+    
+    #cabecalho nav{
+        height: 8vh;
+    }
+
+    #cabecalho .menu{
+        height: 8vh;
+    }
+
+    #cabecalho .arrow{
+        height: 5vh;
+    }
+    #cabecalho .espaco {
+        height: 57vh;
+    }
+    #cabecalho .espaco h1 {
+        font-size: 15rem;
+    }
+
+    #cabecalho .espaco p{
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width:875px){
+    #cabecalho .menu a{
+        font-size: 2vw;
+    }
+    #cabecalho .espaco h1 {
+        font-size: 15vw;
+    }
+
+    #cabecalho .espaco p{
+        font-size: 1.5vw;
+        line-height: 2vh;
+    }
+
+    #cabecalho .arrow a{
+        height: 4vh;
+        width: 15vw;
+    }
+
+    #cabecalho .arrow a img{
+        height: 1vh;
+        width: 7vw;
+    }
+}
+
+@media (max-width: 360px){
+    #cabecalho .espaco p {
+        font-size: 2.5vw;
+        width: 90vw;
+    }
+}

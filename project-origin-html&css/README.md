@@ -4,3 +4,8 @@
 
 Para vizualização do projeto, é preciso a utilização do Live Server na sua IDE de preferência.
 
+Caso não tenha acesso a nenhuma IDE e queira ver como o projeto ficou abaixo deixarei algumas imagens do projeto pronto.
+
+## Versões Desktop
+
+## Versões Mobile

@@ -1,0 +1,144 @@
+.item{
+    color: #FAFBFD;
+    background: #121212c0;
+    height: 45vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: #121212 5px solid;
+    border-bottom: #ffffff3b 5px solid;
+    text-align: center;
+}
+
+.item .buttonBuy{
+    background-color: #121212;
+    color: #FAFBFD;
+    width: 10vw;
+    height: 5vh;
+    text-transform: uppercase;
+    letter-spacing: .2vw;
+    font-weight: 900;
+    margin-top: 2vh;
+    border: #FAFBFD solid 1px;
+    box-shadow: .2vw .2vh #fafbfdc7;
+}
+
+.item .imgCard{
+    background-image: url(../../assets/img/fundoimg.png);
+    background-size:2vw;
+    width: 15vw;
+    height: 20vh;
+    margin-bottom: 2vh;
+    border-radius: 1vw;
+    border: #1212122d 2px solid;
+}
+
+.item .nameItem{
+    font-size: 1.8rem;
+}
+
+.item .preco{
+    margin-top: 2vh;
+    margin-bottom: 5px;
+}
+
+.item .imgCard:hover{
+    width: 16vw;
+    height: 21vh;
+    border-radius: 1vw;
+    border: #1212122d 2px solid;
+   
+    transition-property: all;
+    transition-duration: .1s;
+    transition-timing-function: ease-in;
+}
+
+@media (max-width:1700px){
+    html {
+        font-size: 55%;
+    }
+
+    .item .imgCard {
+        height: 18vh;
+    }
+}
+
+@media (max-width:1315px){
+    .item {
+        height: 35vh;
+        width: 25vw;
+    }
+
+    .item .imgCard{
+        height: 15vh;
+        width: 20vw;
+    }
+
+    .item .imgCard:hover{
+        height: 16vh;
+        width: 21vw;
+    }
+}
+
+@media (max-width:875px){
+    .item{
+        width: 300px;   
+    }
+
+    .item .imgCard{
+        width: 35vw;
+        height: 15vh;
+    }
+    .item .imgCard:hover{
+        width: 36vw;
+        height: 16vh;
+    }
+    
+    .item .nameItem{
+        font-size: 2.2vw;
+    }
+
+    .item p{
+        font-size: 2.2vw;
+    }
+
+    .item .buttonBuy{
+        width: 20vw;
+    }
+}
+
+@media (max-width:550px){
+    .item{
+        width: 300px;
+        height: 400px;
+    }
+
+    .item .imgCard{
+        width: 35vw;
+        height: 15vh;
+    }
+    .item .imgCard:hover{
+        width: 36vw;
+        height: 16vh;
+    }
+    
+    .item .nameItem{
+        font-size: 2.2rem;
+    }
+
+    .item p{
+        font-size: 2.2rem;
+    }
+
+    .item .buttonBuy{
+        width: 40vw;
+    }
+}
+
+@media (max-width: 360px){
+    .item .imgCard {
+        width: 60vw;
+    }
+}

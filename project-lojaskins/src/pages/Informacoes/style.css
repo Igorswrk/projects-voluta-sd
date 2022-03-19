@@ -1,0 +1,129 @@
+#informacoes{ 
+    font-family: 'Montserrat';
+    width: 100vw;
+}
+
+#informacoes .container{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#informacoes .slider{
+	display: flex;
+	position: relative;
+    width: 40vw;
+    height: auto;
+    text-align: center;
+	padding-bottom: 35%;
+		user-select: none;
+        background: rgb(18,18,18);
+        background: linear-gradient(180deg, rgba(18,18,18,1) 0%, rgba(250,251,253,1) 100%);
+	box-shadow: 1vw 2vh #12121266, 
+	2vw 4vh #1212124d;
+}
+
+#informacoes .slider .prev, #informacoes .slider .next{
+	width: 12%;
+	height: inherit;
+	position: absolute;
+
+	z-index: 99;
+	transition: .45s;
+	cursor: pointer;
+}
+
+#informacoes .slider .next{right:0;}
+#informacoes .slider .prev{left:0;}
+
+#informacoes .slider .prev:hover, #informacoes .slider .next:hover{
+	transition: .3s;
+	background-color: #000000;
+	color: #ffffff; 
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four,
+#i5:checked ~ #five {
+    z-index: 9; 
+    animation: scroll 1s ease-in-out;
+}
+
+@media (max-width:1700px){
+    html {
+        font-size: 55%;
+    }
+    #informacoes .slider{
+        width: 50vw;
+        height: 10vh;
+    }
+}
+
+@media (max-width:1510px){
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width:1315px){
+    html{
+        font-size: 45%;
+    }
+
+    #informacoes .container{
+        height: 70vh;
+     }
+ 
+} 
+
+@media (max-width:900px){
+    .slide_img .div_img {
+        width: 25vw;
+    }
+}
+
+@media (max-width:875px){
+    #informacoes .container{
+        height: 80vh;
+    }
+
+    #informacoes .slider {
+        width: 500px;
+        height: 200px;
+    }
+}
+
+@media (max-width:550px){
+
+    #informacoes .container{
+        height: 55vh;
+    }
+
+    #informacoes .slider {
+        width: 90vw;
+        height: 25vh;
+        box-shadow: none;
+    }
+}
+
+@media (max-width:455px){
+    #informacoes .slider {
+       width: 80vw;
+       height: 25vh;
+   }
+}
+
+@media (max-width: 447px){
+    #informacoes .container {
+        height: 70vh;
+    }
+
+    #informacoes .slider {
+       width: 95vw;
+       height: 30vh;
+    }
+}
